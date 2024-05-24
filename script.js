@@ -62,9 +62,19 @@ document.addEventListener('DOMContentLoaded', function () {
     //     loop: true
     // });
     var typed = new Typed(".Multiple_text", {
-        strings: ["Web Developer", "UI/UX Designer", "Programmer", "Freelancer","Android Developer"],
+        strings: ["ML Developer", "Data Scientist", "Programmer", "AI Enthusiast 🚀","UI/UX Designer"],
         typeSpeed: 125,
         backSpeed: 100,
         loop: true
     });
 });
+document.getElementById("contact").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get the resume link from the input field
+    var resumeLink = document.getElementById("resume-link").value;
+    
+    // Redirect to the resume link
+    window.open(resumeLink, '_blank');
+});
+
